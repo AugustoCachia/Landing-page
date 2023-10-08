@@ -16,52 +16,67 @@ img {
 
 .top {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
     align-items: center;
-    gap: 20px;
     background-color: #1f2937;
     font-size: 18px;
     color: #e5e7eb;
+    padding-bottom: 70px;
+}
 
+.header {
+    display: flex;
+    width: 860px;
+    justify-content: space-between;
+    padding-bottom: 25px;
 }
 .header-right {
     display: flex;
     gap: 10px;
 }
 
-.content1 {
+.content {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 100px;
     background-color: #1f2937;
 }
 
-.content1 h3 {
+.content div {
+    display: flex;
+    flex-direction: column;
+    width: 410px;
+}
+.content h3 {
     font-size: 48px;
     font-weight: bolder;
-    color: #f9faf8;
-    
+    color: #f9faf8;  
+    margin: 12px auto; 
 }
 
-.content1 p {
+.content p {
     font-size: 18px;
     color: #e5e7eb;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
-.content1 a {
+.content a {
     font-size: 24px;
     color: #f9faf8;
     text-decoration: none;
 }
 
-.content1  button {
+.content  button {
     background-color: #3882f6;
     border-radius: 5px;
     border-width: 0px;
+    width: fit-content;
+    padding: 2px 10px;
 }
 
-.content1 img {
+.content img {
     height: 232px;
     width:  auto;
 }
@@ -70,6 +85,7 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 346px;
 }
 
 .content2 h3 {
@@ -105,30 +121,50 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex: 0;
-    flex-wrap: wrap;
+    padding: 2px;
+    width: 160px;
     text-align: center;
 }
 
-.quote {
+.content3 {
     background-color: #e5e7eb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight:10;
     font-size: 36px;
-    font-weight: lighter;
     font-style: italic;
     color: #1f2937;
-    text-align: center;
 }
 
-.quote > p {
-    display: flex;
-    justify-content: flex-end ;
-    width: 750px;
-    margin-left: auto;
-    margin-right: auto;
+.content3 > p {
+    width: 700px;
+    margin: 5px auto;
+}
+.quote {
+    padding-top: 64px;
+}
+.author {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: right;
+    padding-bottom: 64px;
 }
 
+.bottom {
+    margin: 100px auto;
+    padding: 10px 90px;
+    color: #f9faf8;
+    
+}
 .bottom > button {
     background-color: #3882f6;
     border: 2px solid #f9faf8;
     border-radius: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: #f9faf8;
+    padding: 9px;
 }
